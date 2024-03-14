@@ -1,0 +1,468 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  nav ul {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 1px -5px 7px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: black;
+  }
+  nav {
+    background-color: white;
+    /* To make the nav bar fixed in the bottom */
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+
+    z-index: 99;
+  }
+
+  .nav_button .buttontext {
+    font-family:"Karla", sans-serif;
+    font-size: 20px;
+  }
+
+  .nav_button .material-symbols-outlined {
+    font-size: 35px;
+    color: grey;
+  }
+
+.topnav {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topnav .backBtn {
+    background-color: white;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+  }
+
+  .topnav .moreBtn {
+    background-color: white;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+  }
+
+  .topnav .moreBtn:hover {
+cursor:pointer;
+  }
+
+  .topnav .backBtn .material-symbols-outlined {
+    font-size: 50pt;
+    padding-top: 3px;
+    color:black;
+  }
+
+  .topnav .moreBtn .material-symbols-outlined {
+    font-size: 40pt;
+    padding-top: 10px;
+    padding-left: 8px;
+    color:black;
+  }
+
+  .topnav p {
+    font-family: "Karla", sans-serif;
+    font-size: 50pt;
+    font-weight: 600;
+  }
+
+ .bigcontainer {
+    display:flex;
+    justify-content:space-between }
+ 
+  .container1 {
+    display:grid;
+    grid-template-columns: 13em 13em;
+    background-color: white;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 475px;
+    margin-left: 17px;
+    margin-top: 50px;
+  }
+
+  .container2 {
+    padding-top: 15px;
+  }
+
+  .container3 {
+    display:grid;
+    grid-template-columns:1.5fr 1.5fr;
+    grid-template-rows: 1.5fr 1.5fr;
+    margin-left: 0px;
+  }
+  .container3 p {
+    font-family: "Karla", sans-serif;
+    font-size: 18pt;
+    font-weight: 600;
+  }
+
+  .container3 .material-symbols-outlined {
+    padding-left: 40px;
+    padding-top: 54px;
+    color: #386669;
+    font-size: 30pt;
+  }
+
+  .container3 .material-symbols-outlined:hover {
+    cursor:pointer;
+  }
+
+  .container3 .price {
+    padding-left: 15px;
+    padding-top: 29px;
+  }
+
+  .container3 .bTitle {
+    padding-top: 60px;
+    font-size: 19pt;
+    font-weight: 700;
+  }
+
+  .container3 input {
+    font-family:"Karla", sans-serif;
+    font-size: 24pt;
+    width: 150px;
+    height: auto;
+    padding: 1px;
+    margin-top: 9px;
+  }
+
+  .container4 {
+    display:grid;
+    grid-template-columns: 13em 13em;
+    background-color: white;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 475px;
+    margin-top: 50px;
+  }
+
+  .container6 {
+    display:grid;
+    grid-template-columns:1.5fr 1.5fr;
+    grid-template-rows: 1.5fr 1.5fr;
+  }
+
+  .container6 p {
+    font-family: "Karla", sans-serif;
+    font-size: 18pt;
+    font-weight: 700;
+  }
+
+  .container6 .cTitle {
+    padding-top: 60px;
+    font-size: 18pt;
+    font-weight: 700;
+  }
+
+  .container6 .material-symbols-outlined {
+    padding-left: 40px;
+    padding-top: 54px;
+    color: #386669;
+    font-size: 30pt;
+  }
+
+  .container6 .material-symbols-outlined:hover {
+    cursor:pointer;
+  }
+
+  .container6 input {
+    font-family:"Karla", sans-serif;
+    font-size: 24pt;
+    width: 150px;
+    height: auto;
+    padding: 1px;
+    margin-top: 9px;
+  }
+
+  .container6 .price2 {
+    padding-left: 15px;
+    padding-top: 29px;
+  }
+
+  .container7 {
+    display:grid;
+    grid-template-columns: 13em 13em;
+    background-color: white;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 475px;
+    margin-right: 17px;
+    margin-top: 50px;
+  }
+
+  .container5 {
+    padding-top: 10px;
+  }
+
+  .container9 {
+    display:grid;
+    grid-template-columns:1.5fr 1.5fr;
+    grid-template-rows: 1.5fr 1.5fr;
+  }
+
+  .container9 p {
+    font-family: "Karla", sans-serif;
+    font-size: 18pt;
+    font-weight: 700;
+  }
+
+  .container9 .vTitle {
+    padding-top: 60px;
+    font-size: 19pt;
+    font-weight: 700;
+  }
+
+  .container9 .material-symbols-outlined {
+    padding-left: 40px;
+    padding-top: 54px;
+    color: #386669;
+    font-size: 30pt;
+  }
+
+  .container9 .material-symbols-outlined:hover {
+    cursor:pointer;
+  }
+
+  .container9 input {
+    font-family:"Karla", sans-serif;
+    font-size: 24pt;
+    width: 150px;
+    height: auto;
+    padding: 1px;
+    margin-top: 9px;
+  }
+
+  .container9 .price3 {
+    padding-left: 15px;
+    padding-top: 29px;
+  }
+
+  .coupons {
+   display:flex;
+   justify-content:center;
+   margin-top: 3em;
+   margin-left: 350px;
+   margin-right: 350px;
+   background-color:black;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-radius: 10px;
+  }
+
+  .coupons p {
+    font-family:"Karla", sans-serif;
+    color:white;
+    font-size: 30pt;
+    font-weight: 800;
+  }
+
+  .container8 {
+    padding-top: 5px;
+  }
+
+  .coupons .material-symbols-outlined {
+    color: white;
+    font-size: 30pt;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-top: 4px;
+  }
+
+  .coupons:hover {
+    background-color:#386669;;
+    cursor: pointer;
+  }
+
+  .table {
+    font-family:"Karla", sans-serif;
+    font-weight: 700;
+    width: 840px;
+    margin-left: 341px;
+    margin-top: 30px;
+  }
+
+  .table td {
+    padding: 10px;
+  }
+
+  .table .grey {
+    font-size: 20pt;
+    color: grey;
+  }
+
+.table .black {
+    font-size: 20pt;
+    text-align: right;
+  }
+
+  .table .total1 {
+    font-size: 35pt;
+  }
+
+  .table .total2 {
+    font-size: 35pt;
+    text-align: right;
+  }
+
+  .checkout {
+    display:flex;
+    justify-content:center;
+    margin-top: 3em;
+    margin-left: 350px;
+    margin-right: 350px;
+    background-color:#386669;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    animation: shake 0.5s infinite alternate;
+    margin-bottom: 12em;
+  }
+
+  @keyframes shake {
+    0% {
+        transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+
+  .checkout p {
+    font-family:"Karla", sans-serif;
+    color:white;
+    font-size: 30pt;
+    font-weight: 600;
+  }
+
+  .checkout p:hover {
+    text-decoration:underline;
+    cursor:pointer;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+
+    nav ul {
+        padding: 0.5rem;
+      }
+
+      .nav_button .buttontext {
+        font-family:"Karla", sans-serif;
+        font-size: 15px;
+      }
+    
+      .nav_button .material-symbols-outlined {
+        font-size: 30px;
+      }
+
+    .topnav .backBtn {
+    width: 55px;
+    height: 55px;
+}
+
+   
+    .topnav .backBtn {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .topnav .moreBtn {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .topnav .backBtn .material-symbols-outlined {
+        font-size: 35pt;
+        padding-left: 3.5px;
+        padding-top: 5px;
+    }
+    
+    .topnav .moreBtn .material-symbols-outlined {
+        font-size: 30pt;
+        padding-left: 7.5px;
+        padding-top: 8px;
+    }
+
+    .topnav p {
+        font-size: 30pt;
+    }
+
+    .bigcontainer{
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        padding-left: 5px;
+    }
+
+    .container1 {
+        margin-left:0px;
+    }
+
+    .coupons {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .coupons p {
+        font-size: 24pt;
+        padding-top: 3px;
+    }
+
+    .table {
+        margin-left:10px;
+        width: 463px;
+    }
+
+    .table .grey {
+        font-size: 14pt;
+    }
+
+    .table .black {
+        font-size: 14pt;
+    }
+
+    .table .total1 {
+        font-size: 25pt;
+    }
+
+    .table .total2 {
+        font-size: 25pt;
+    }
+
+    .checkout {
+        margin-left: 35px;
+        margin-right:35px;
+        margin-bottom: 8em;
+    }
+
+    .checkout p {
+        font-size: 20pt;
+    }
+
+}
+    

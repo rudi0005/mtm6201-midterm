@@ -1,0 +1,406 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: white;
+}
+
+nav ul {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 1px -5px 7px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: black;
+  }
+  nav {
+    background-color: white;
+    /* To make the nav bar fixed in the bottom */
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+
+    z-index: 99;
+  }
+
+  .nav_button .buttontext {
+    font-family:"Karla", sans-serif;
+    font-size: 20px;
+  }
+
+  .nav_button .material-symbols-outlined {
+    font-size: 35px;
+    color: grey;
+  }
+.topnav {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topnav .backBtn {
+    background-color: white;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+  }
+
+  .topnav .favBtn {
+    background-color: white;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+  }
+
+  .topnav .backBtn .material-symbols-outlined {
+    font-size: 50pt;
+    padding-top: 3px;
+    color:black;
+  }
+
+  .topnav .favBtn .material-symbols-outlined {
+    font-size: 40pt;
+    padding-top: 10px;
+    padding-left: 8px;
+    color:#5CA4A9;
+  }
+
+  .topnav .favBtn:hover {
+    background-color: #5CA4A9;
+    cursor: pointer;
+  }
+
+  .topnav .favBtn .material-symbols-outlined:hover {
+    color: white;
+  }
+
+  .burgersizes {
+    display:flex;
+    justify-content:space-evenly;
+  }
+
+  .burgersizes .small {
+    background-color: white;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    width: 85px;
+    height: 85px;
+    border-radius: 20px;
+  }
+
+.burgersizes .small:hover {
+    background-color: #5CA4A9;
+}
+
+  .burgersizes .large {
+    background-color: white0;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    width: 85px;
+    height: 85px;
+    border-radius: 20px;
+  }
+
+  .burgersizes .large:hover {
+    background-color: #5CA4A9;
+}
+
+  .burgersizes2 {
+    display:flex;
+    justify-content:center;
+  }
+
+  .burgersizes2 .medium {
+        background-color: white;
+        box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.5);
+        width: 85px;
+        height: 85px;
+        border-radius: 20px;
+      }
+
+      .burgersizes2 .medium:hover {
+        background-color: #5CA4A9;
+    }
+
+  .burgercontent {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+  }
+
+  .small_letter {
+    font-size: 30pt;
+    font-family:"Karla", sans-serif;
+    font-weight: 700;
+    padding-left: 27px;
+    padding-top: 20px;
+  }
+
+  .small_letter:hover {
+    color: white;
+    cursor:pointer;
+  }
+
+  .medium_letter {
+    font-size: 30pt;
+    font-family:"Karla", sans-serif;
+    font-weight: 700;
+    padding-left: 24px;
+    padding-top: 20px;
+  }
+  .medium_letter:hover {
+    color: white;
+    cursor:pointer;
+  }
+
+  .large_letter {
+    font-size: 30pt;
+    font-family:"Karla", sans-serif;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .large_letter:hover {
+    color: white;
+    cursor:pointer;
+  }
+
+  .burgertitle {
+    font-family:"Karla", sans-serif;
+    font-size: 40pt;
+    padding:0px;
+    font-weight: 700;
+
+  }
+
+  .description {
+    font-family:"Karla", sans-serif;
+    font-size: 24pt;
+    padding-left: 125px;
+    padding-right: 125px;
+    text-align: center;
+    padding-top: 30px;
+    color: grey;
+  }
+
+.counter {
+    display:flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.counter input {
+    font-family:"Karla", sans-serif;
+    font-size: 24pt;
+    width: 65px;
+    height: auto;
+    padding: 1px;
+}
+
+.counter p {
+    font-family:"Karla", sans-serif;
+    font-size: 24pt;
+    padding-right: 25px;
+    font-weight: 700;
+}
+
+.pricetag {
+    display: flex;
+    flex-direction:column;
+    font-family:"Karla", sans-serif;
+    padding-left: 100px;
+}
+
+.cart_button {
+    font-family:"Karla", sans-serif;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #386669;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cart_button a {
+    text-decoration: none;
+    display:flex;
+}
+
+.cart_button:hover {
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-bottom: 12em;
+    padding-right: 100px;
+}
+
+.pricetag .pricetitle {
+    font-size: 25pt;
+    color:gray;
+}
+
+.pricetag .cost {
+    font-size: 40pt;
+}
+
+.cart_button .material-symbols-outlined {
+    font-size: 45pt;
+    padding-top: 10px;
+    color: white;
+    padding-right:10px;
+}
+
+.cart {
+    font-size: 30pt;
+    padding-top: 15px;
+    text-decoration:none;
+    color:white;
+}
+
+.cart_button p:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav ul {
+        padding: 0.5rem;
+      }
+
+      .nav_button .buttontext {
+        font-family:"Karla", sans-serif;
+        font-size: 15px;
+      }
+    
+      .nav_button .material-symbols-outlined {
+        font-size: 30px;
+      }
+
+    .topnav .backBtn {
+    width: 55px;
+    height: 55px;
+}
+
+.topnav .favBtn {
+    width: 55px;
+    height: 55px;
+}
+
+.topnav .backBtn .material-symbols-outlined {
+    font-size: 35pt;
+    padding-left: 3.5px;
+    padding-top: 5px;
+}
+
+.topnav .favBtn .material-symbols-outlined {
+    font-size: 30pt;
+    padding-left: 7.5px;
+    padding-top: 8px;
+}
+
+.burgertitle {
+    text-align: center;
+    font-size: 28pt;
+}
+
+.description {
+    font-size: 16pt;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.burgersizes .small {
+    width: 70px;
+    height: 70px;
+    margin-left: 60px;
+}
+
+.burgersizes .large {
+    width: 70px;
+    height: 70px;
+    margin-right: 60px;
+}
+
+.burgersizes2 .medium {
+    width: 70px;
+    height: 70px;
+}
+
+.burgersizes {
+    display:flex;
+    justify-content: space-between;
+}
+
+.small_letter {
+    font-size: 20pt;
+}
+
+.medium_letter {
+    font-size: 20pt;
+}
+
+.large_letter {
+    font-size: 20pt;
+}
+
+.counter p {
+    font-size: 16pt;
+    padding-top: 7px;
+}
+
+.counter input {
+    font-size: 20pt;
+}
+
+.footer {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.footer .pricetag {
+    padding-left: 110px;
+}
+
+.footer .pricetitle {
+    font-size: 20pt;
+}
+
+.footer .cost {
+    font-size: 35pt;
+}
+
+.cart_button a{
+    padding-top: 10px;
+    width: 300px;
+}
+
+.cart_button p {
+    font-size: 20pt;
+    padding-top: 7px;
+}
+
+.cart_button {
+    margin-left: 50px;
+    width: 200px;
+}
+
+.cart_button .material-symbols-outlined {
+    font-size: 20pt;
+}
+
+}

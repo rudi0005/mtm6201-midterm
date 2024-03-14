@@ -1,0 +1,512 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  /*Above is to set the default margin and padding to 0. Also, the background color is
+  by default white already but I was playing around with the colors beforehand and ultimately
+  decided on white. I could delete it but I chose not to.*/
+
+  nav ul {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 1px -5px 7px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: black;
+  }
+  nav {
+    background-color: white;
+    /* To make the nav bar fixed in the bottom */
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+
+    z-index: 99;
+  }
+
+  .nav_button .buttontext {
+    font-family:"Karla", sans-serif;
+    font-size: 20px;
+  }
+
+  .nav_button .material-symbols-outlined {
+    font-size: 35px;
+    color: grey;
+  }
+
+  /*Above is the navigation bar styling, which stays at the bottom of the page as the user scrolls.
+  I used flexbox to position them, and changed the font size and color as well as the size and
+  color of the google icons.*/
+
+  .header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .menu .material-symbols-outlined {
+    font-size: 50px;
+    margin-left: 5px;
+  }
+
+  .menu .material-symbols-outlined:hover {
+    cursor: pointer;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family:"Karla", sans-serif;
+    font-size: 35pt;
+    margin-left: 25px;
+    font-weight: 800;
+  }
+
+  .location .province {
+    color: gray;
+    font-family:"Karla", sans-serif;
+    font-size: 35pt;
+
+  }
+
+  .location .material-symbols-outlined {
+    font-size: 50px;
+    padding-right: 10px;
+  }
+
+  .header .user {
+    margin-top: 20px;
+    padding-right: 13px;
+  }
+
+  .header .user .userphoto {
+    border-radius: 20px;
+  }
+
+  .header .user .userphoto {
+    cursor: pointer;
+  }
+
+  /*For the chunk of code above, this is styling the header-type area at the top of the page.
+  Using flexbox, I was able to space them all evenly and adjust their positions. I also changed
+  the font sizes and colors*/
+
+  .introsearch {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hey .title {
+    font-size: 36pt;
+    font-weight: 800;
+    margin-left: 20px;
+    font-family:"Karla", sans-serif;
+  }
+
+  .hey .addition {
+    font-size: 22pt;
+    font-weight: 400;
+    color: gray;
+    margin-left: 20px;
+    padding-top: 5px;
+    font-family:"Karla", sans-serif;
+  }
+
+  form {
+    margin-right: 30px;
+    margin-top: 1rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 5pt;
+    padding: 3pt;
+    padding-left: 10pt;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+  }
+
+  form input {
+    height: 2rem;
+    text-align: center;
+  }
+
+  form input {
+    border: none;
+    width: 20vw;
+    text-align: left;
+    margin-left: 3pt;
+  }
+  form input:hover {
+    border: none;
+  }
+  form input:focus {
+    border: none;
+    outline: none;
+  }
+
+  form:hover {
+    cursor: pointer;
+  }
+
+  .searchbar .submit .material-symbols-outlined {
+    padding-top:5px;
+    padding-right: 5px;
+}
+  
+  .search .searchfont {
+    font-family:"Karla", sans-serif;
+    font-size: 14pt;
+  }
+
+  .material-symbols-outlined {
+    align-self: center;
+    color: gray;
+    font-size: 14pt;
+  }
+
+  /*For the chunk of code above, this is styling the introduction message and the search bar.
+  Everything I did is self-explanitory and decently simple.*/
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+
+  .container .cart {
+    width: 30vw;
+    border: 1pt solid black;
+    border-radius: 10pt;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: white;
+  }
+
+  .container .cart:hover {
+    background-color: #9BC1BC;
+  }
+
+  .container .cart .cartImg {
+    width: 12vw;
+    height: 12vw;
+    margin: 2rem auto;
+    border-radius: 10pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: shrinkGrow 2s infinite alternate;
+  }
+
+  @keyframes shrinkGrow {
+    0% {
+      transform: scale(1); /* Start with normal size */
+    }
+    100% {
+      transform: scale(0.8); /* End with 80% of the original size */
+    }
+  }
+
+  .container .cart .cartTitle {
+    font-size: 24pt;
+    font-weight: 700;
+    font-family:"Karla", sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .container .cart .cartBtn a {
+    margin: 1rem auto;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #38666a;
+  }
+
+  .cartBtn .material-symbols-outlined {
+    font-size: 30pt;
+    color: white;
+  }
+
+  .cartBtn .material-symbols-outlined:hover {
+    color: black;
+  }
+
+  .container .cart .cartBtn a:hover {
+    background-color:white;
+  }
+
+  /*For the chunk of code above, I used flexbox to position each food category. They change colors
+  as the user hovers over them, with the use of :hover. I changed things like the font size and
+  border radius here.*/
+
+  .popular {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .popular .title {
+    font-family:"Karla", sans-serif;
+    font-size: 40pt;
+    font-weight: 800;
+    padding-left: 40px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .popular .addition {
+    font-family:"Karla", sans-serif;
+    font-size: 20pt;
+    padding-right: 0px;
+    color: #38666a;
+  }
+
+  .popular .morearrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 75px;
+  }
+
+  .popular .addition:hover {
+    text-decoration:underline #38666a;
+    cursor:pointer;
+  }
+
+  .popular .morearrow .material-symbols-outlined {
+    color: #38666a;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-top: 2px;
+    font-size: 22pt;
+  }
+
+  /*Here, I used flexbox to position my titles. When the user hovers over view all, it is underlined.*/
+
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 0 10rem;
+  }
+
+  .container2 .cart {
+    width: 30vw;
+    height: 415px;
+    border: 1pt solid black;
+    border-radius: 10pt;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: white;
+  }
+
+  .container2 .cart .cartImg {
+    width: 25vw;
+    height: 10vw;
+    margin: 2rem auto;
+    border-radius: 10pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5CA4A9;
+    padding-bottom: 50px;
+  }
+
+  .container2 .cart .cartTitle {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22pt;
+    font-weight: 800;
+    font-family:"Karla", sans-serif;
+  }
+
+  .container2 .cart .gray {
+    width: 80%;
+    margin: 3pt auto;
+    color: gray;
+    text-align: left;
+    font-size: 14pt;
+    font-family:"Karla", sans-serif;
+  }
+
+  .container2 .cart .cartBtn a {
+    margin: 1rem auto;
+    width: 83%;
+    height: 4vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #E6EBE0;
+    font-family:"Karla", sans-serif;
+    font-size: 18pt;
+    padding: 20px;
+    font-weight: 700;
+    color:black;
+    border: 1px solid black;
+  }
+
+  .container2 .cart .cartBtn a:hover {
+    background-color: #5CA4A9;
+  }
+
+  /*Again, using flexbox, I positioned each item.*/
+
+  @media only screen and (max-width: 600px) {
+    
+    .header {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .header .menu .material-symbols-outlined {
+        font-size: 30px;
+        padding-top: 19px;
+    }
+
+    .header .location .material-symbols-outlined {
+        font-size: 30px;
+    }
+
+    .location {
+        font-size: 30px;
+        font-weight: 800px;
+        padding-top: 15px;
+    }
+
+    .location .province {
+        font-size: 30px;
+        font-weight: 800px;
+    }
+
+    .header .user .userphoto {
+        border-radius: 7px;
+    }
+
+.introsearch .hey .title {
+    font-size: 24pt;
+    margin-left: 9pt;
+}
+
+.introsearch .hey .addition {
+    font-size: 18pt;
+    margin-left: 10pt;
+}
+
+.introsearch {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:start;
+}
+
+.container .cart .cartBtn a {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+    
+.container .cart .cartImg {
+    height: 135px;
+    width: 135px;
+}
+
+.popular .title {
+    padding-left: 10pt;
+    padding-bottom: 0px;
+    padding-right: 200px;
+    padding-top: 75px;
+    font-size: 30pt;
+}
+
+.popular {
+  margin-top: 0px;
+}
+
+.popular .morearrow .addition {
+    padding-left: 0px;
+    font-size: 12pt;
+    padding-top: 6px;
+    font-weight: 600;
+}
+
+.popular .morearrow .material-symbols-outlined {
+    font-size: 16pt;
+    padding-top: 5px;
+}
+
+    .container2 {
+      display: block;
+    }
+
+    .container2 .cart {
+      margin: 2rem auto;
+      width:auto;
+      border: 1pt solid black;
+      border-radius: 10pt;
+      box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      height: 500px;
+    }
+
+    .container2 .cart .cartImg {
+      width: 80vw;
+      height: 50vw;
+    }
+
+    .container2 .cart .cartBtn a {
+      height: 10vh;
+    }
+
+    form {
+     width: 450px;
+    }
+
+    form input {
+      width: 300px;
+
+    }
+    .container2 .cart .cartImg {
+        height: 250px;
+    }
+
+    nav ul {
+        padding: 0.5rem;
+      }
+
+      .nav_button .buttontext {
+        font-family:"Karla", sans-serif;
+        font-size: 15px;
+      }
+    
+      .nav_button .material-symbols-outlined {
+        font-size: 30px;
+      }
+  }
+
+  /*Here, when the screen is at its smallest, things will change accordingly.*/

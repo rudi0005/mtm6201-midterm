@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Midterm</title>
+  </head>
+  
+  
+  <body>
+    <main>
+
+
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="index.html" role="menuitem">
+              <div class="nav_button">
+                <div>
+                  <span class="material-symbols-outlined"> home </span>
+                </div>
+                <div class="buttontext">
+                  <p>Home</p>
+                </div> <!--closes buttontext-->
+              </div><!--closes nav_button-->
+            </a>
+          </li>
+          <li>
+            <a href="" role="menuitem">
+              <div class="nav_button">
+                <div>
+                  <span class="material-symbols-outlined"> favorite </span>
+                </div>
+                <div class="buttontext">
+                  <p>Favourites</p>
+                </div><!--closes buttontext-->
+              </div><!--closes nav_button-->
+            </a>
+          </li>
+          <li>
+            <a href="" role="menuitem">
+              <div class="nav_button">
+                <div>
+                  <span class="material-symbols-outlined"> person </span>
+                </div>
+                <div class="buttontext">
+                  <p>Account</p>
+                </div><!--closes buttontext-->
+              </div><!--closes nav_button-->
+            </a>
+          </li>
+          <li>
+            <a href="" role="menuitem">
+              <div class="nav_button">
+                <div>
+                  <span class="material-symbols-outlined"> more_horiz </span>
+                </div>
+                <div class="buttontext">
+                  <p>More</p>
+                </div><!--closes buttontext-->
+              </div><!--closes navbutton-->
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--The code above in the nav tag is for the navigation on the bottom of the site.
+    I used google icons for each button, using the span tag to incorporate them.
+    With the use of divs I was able to easily style them in css.-->
+
+      <section role="region">
+        <div class="header">
+          <div class="menu">
+            <span class="material-symbols-outlined"> menu </span>
+          </div> <!--closes menu-->
+          <div class="location">
+            <span class="material-symbols-outlined"> location_on </span>
+            <p>Ottawa, <span class="province"> ON </span></p>
+          </div> <!--closes location-->
+          <div class="user">
+            <picture>
+                <source media="(max-width:600px)" srcset="images/50px-raija.jpg">
+                <source media="(max-width:1280px)" srcset="images/100px-raija.jpg">
+            <img class="userphoto" src="images/100px-raija.jpg" alt="user-image">
+        </picture>
+        </div><!--closes user-->
+        </div> <!--closes header-->
+
+        <!--For the code in the div class "header", this is where the hamburger menu, location,
+        and user photo are. In the picture tag, I included two images that are the same but different
+        sizes, so that they will respond accordingly. I used divs and classes so that I can place
+        them in the right spot using flexbox later.-->
+
+        <div class="introsearch">
+        <div class="hey">
+          <p class="title">Hey!</p>
+          <p class="addition">Let's get your order.</p>
+        </div> <!--closes hey-->
+
+       <div class="searchbar">
+        <form>
+          <div class="submit">
+            <span class="material-symbols-outlined"> search </span>
+          </div> <!--closes submit-->
+          <div class="search">
+            <input class="searchfont"
+              type="text" placeholder="Search our delicious burgers...">
+          </div> <!--closes search-->
+        </div> <!--closes searchbar-->
+        </div> <!--closes introsearch-->
+        </form>
+
+        <!--For the code in the introsearch div, this is where there is an introduction message,
+        and where the user can search the site for products. I added lots of divs to make
+    styling easier with flexbox later in css.-->
+
+        <div class="container">
+          <div class="cart">
+            <div class="cartImg">
+                <picture>
+                    <source media="(max-width:600px)" srcset="images/burger-100_x_100.png">
+                    <source media="(max-width:1280px)" srcset="images/burger-200_x_200.png">
+                <img src="images/burger-200_x_200.png" alt="burger-icon">
+                </picture>
+            </div><!--closes cartImg-->
+            <div class="cartTitle">
+              <p>Burgers</p>
+            </div><!--closes cartTitle-->
+            <div class="cartBtn">
+              <a href="page2.html">
+                <span class="material-symbols-outlined"> chevron_right </span>
+              </a>
+            </div><!--closes cartBtn-->
+          </div><!--closes cart-->
+
+          <div class="cart">
+            <div class="cartImg">
+                <picture>
+                    <source media="(max-width:600px)" srcset="images/pizza-100_x_100.png">
+                    <source media="(max-width:1280px)" srcset="images/pizza-200_x_200.png">
+                <img src="images/pizza-200_x_200.png" alt="pizza-icon">
+            </div> <!--closes cartImg-->
+            <div class="cartTitle">
+              <p>Pizza</p>
+            </div> <!--closes cartTitle-->
+            <div class="cartBtn">
+              <a href="page2.html">
+                <span class="material-symbols-outlined"> chevron_right </span>
+              </a>
+            </div><!--closes cartBtn-->
+          </div><!--closes cart-->
+
+          <div class="cart">
+            <div class="cartImg">
+                <picture>
+                    <source media="(max-width:600px)" srcset="images/cake-100_x_100.png">
+                    <source media="(max-width:1280px)" srcset="images/cake-200_x_200.png">
+              <img src="images/cake-200_x_200.png" alt="cake-icon">
+            </div><!--closes cartImg-->
+            <div class="cartTitle">
+              <p>Cakes</p>
+            </div><!--closes cartTitle-->
+            <div class="cartBtn">
+              <a href="page2.html">
+                <span class="material-symbols-outlined"> chevron_right </span>
+              </a>
+            </div><!--closes cartBtn-->
+          </div> <!--closes cart-->
+        </div> <!--closes container-->
+
+        <!--For everything in the container div, this is where the user can browse items
+        based on categories. Although this is not functional, the look and feel is there.
+        There are images in the picture tag, so that they will change sizes based on screen
+        size. Again, I used lots of divs to make styling easier in css. I also used
+        google icons here again, with the span tag.-->
+
+        <div class="popular">
+          <p class="title">Popular</p>
+          <div class="morearrow">
+          <p class="addition">View all
+          </p>
+          <span class="material-symbols-outlined">
+            navigate_next
+            </span>
+        </div> <!--closes morearrow-->
+        </div> <!--closes popular-->
+
+        <!--Here we have the popular items title, along with a view all button. This will
+        be styled later in css with the use of flexbox.-->
+
+        <div class="container2">
+          <div class="cart">
+            <div class="cartImg">
+                <picture>
+                    <source media="(max-width:600px)" srcset="images/angus-burger_375_x_375.png">
+                    <source media="(max-width:1280px)" srcset="images/angus-burger_300_x_300.png">
+              <img src="images/angus-burger_300_x_300.png" alt="angus-burger">
+            </picture>
+            </div> <!--closes cartImg-->
+            <div class="cartTitle">
+              <p>The Original</p>
+              <p class="price">$22.99</p>
+            </div> <!--closes cartTitle-->
+            <div class="gray"><p>Angus beef burger</p></div>
+
+            <div class="cartBtn">
+              <a href="page2.html"> Order Now </a>
+            </div> <!--closes cartBtn-->
+          </div><!--closes cart-->
+
+          <div class="cart">
+            <div class="cartImg">
+                <picture>
+                    <source media="(max-width:600px)" srcset="images/chicken-burger_375_x_375.png">
+                    <source media="(max-width:1280px)" srcset="images/chicken-burger_300_x_300.png">
+              <img src="images/chicken-burger_300_x_300.png" alt="chicken-burger">
+           </picture>
+            </div><!--closes cartImg-->
+            <div class="cartTitle">
+              <p>The Coop Classic</p>
+              <p class="price">$20.99</p>
+            </div><!--closes cartTitle-->
+            <div class="gray"><p>Battered chicken burger</p></div>
+
+            <div class="cartBtn">
+              <a href="page2.html"> Order Now </a>
+            </div><!--closes cartBtn-->
+          </div> <!--closes cart-->
+
+          <div class="cart">
+            <div class="cartImg">
+                <picture>
+                    <source media="(max-width:600px)" srcset="images/veggie-burger_375_x_375.png">
+                    <source media="(max-width:1280px)" srcset="images/veggie-burger_300_x_300.png">
+              <img src="images/veggie-burger_300_x_300.png" alt="veggie-burger">
+            </picture>
+            </div><!--closes cartImg-->
+            <div class="cartTitle">
+              <p>The Veggie Lover</p>
+              <p class="price">$19.99</p>
+            </div><!--closes cartTitle-->
+            <div class="gray"><p>Vegitarian burger</p></div>
+
+            <div class="cartBtn">
+              <a href="page2.html"> Order Now </a>
+            </div><!--closes cartBtn-->
+          </div><!--closes cart-->
+        </div><!--closes container2-->
+      </section>
+
+      <!--In container2, I added individual items that the user can purchase. They will all bring
+    you to page 2 when you click on the order now button. Again, I added multiple image sizes
+which will be responsive when you change the screen size. There are several divs to make styling
+easier.-->
+
+    </main>
+  </body>
+</html>
